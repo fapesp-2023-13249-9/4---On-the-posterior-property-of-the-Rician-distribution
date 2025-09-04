@@ -1,0 +1,97 @@
+%\documentstyle[12pt]{article}
+\documentclass[12pt]{article}
+\usepackage{color}
+\makeatletter
+% These allow switching interline spacing; the change takes effect immediately:
+\newcommand{\singlespacing}{\let\CS=\@currsize\renewcommand{\baselinestretch}{1}\tiny\CS}
+\newcommand{\f}{\operatorname}
+%\newcommand{\oneandahalfspacing}{\let\CS=\@currsize\renewcommand{\baselinestretch}{1.5}\tiny\CS}
+%\newcommand{\doublespacing}{\let\CS=\@currsize\renewcommand{\baselinestretch}{2.0}\tiny\CS}
+\oddsidemargin .0in \evensidemargin .0in \textwidth 6.5in
+\topmargin-.25in \textheight 22cm
+%\twocolumn[text]
+%% \usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{amsmath,amssymb}
+\usepackage{multirow}
+\usepackage{natbib}
+\pagestyle{myheadings}
+%\pagestyle{empty}
+%\baselineskip=18pt
+%\baselineskip=10pt
+
+\begin{document}
+
+\baselineskip=24pt
+%\singlespacing
+%\doublespacing
+\parskip = 10pt
+\def \qed {\hfill \vrule height7pt width 5pt depth 0pt}
+%\newcommand{\dou}{\partial}
+\setlength\parindent{0pt}
+\def\refhg{\hangindent=20pt\hangafter=1}
+%\def\refmark{\par\vskip 2mm\noindent\refhg}
+\def\refmark{\par\vskip 2.50mm\noindent\refhg}
+%\include{dbtweaged}
+%\include{chirp_rev1recent.tex}
+%\include{dbtlnagad_blind}
+%\include{tksdk1}
+%\include{realam_csa}
+
+\def\mathrlap{\mathpalette\mathrlapinternal} 
+\def\mathclap{\mathpalette\mathclapinternal}
+\def\mathllapinternal#1#2{\llap{$\mathsurround=0pt#1{#2}$}}
+\def\mathrlapinternal#1#2{\rlap{$\mathsurround=0pt#1{#2}$}}
+\newtheorem{theorem}{Theorem}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
+\title{Review Report on
+"On the posterior property of the Rician distribution"}
+\maketitle
+
+Dear Professor Dr. Paolo Giudici,
+
+We are grateful for the opportunity to submit a revised version of our manuscript to your esteemed journal. Our sincere thanks also go to the reviewers for their constructive comments, insightful criticisms, and valuable suggestions.
+
+Enclosed is our revised manuscript. We have meticulously implemented the minor request suggested by the reviewer, which are highlighted in red for ease of reference.
+
+Thank you for your consideration and guidance in this process.
+
+Best regards,
+
+Dr. Pedro Luiz Ramos
+
+\vspace{-0.3cm}(Corresponding author)
+
+\newpage
+
+\section*{Answers to the Reviewer 1}
+
+\textbf{Comment:}  
+The paper concerns the proposal of non informative priors for Rician distributions, especially employed in the field of signal processing. The paper is well written, and the results are interesting. The authors demonstrate the utility of their approach both from a mathematical and an applied viewpoint, by means of one simulated and one real dataset.  
+My remarks concern the utility of the proposed approach in the context of model assessment and, more generally, within the SAFE machine learning paradigm introduced in this journal in a recent paper: https://doi.org/10.1080/02331888.2024.2361481, whose "call for research" should be addressed by the authors.  
+To that aim, they should extend their work to make predictions and evaluate the predictions obtained with their method against simpler, classical methods, in terms of accuracy, robustness, and explainability. This will improve the reproducibility of their paper.  
+They should also try to cite important papers that deal with predictive aspects in signal processing, emphasizing their limits and the potential advantages of the authors' approach.
+
+\textcolor{blue}{ \textbf{Response:}
+We appreciate the thorough review and constructive suggestions provided by the reviewer. In response to the main remark, we have incorporated the S.A.F.E. (Sustainable, Accurate, Fair, and Explainable) principles into our framework, as requested. Specifically, we have extended our work to include predictive inference and have compared our method with simpler, classical approaches, as demonstrated in the simulation study, where our method returns estimates with less bias, lower variability, and more accurate credible intervals. This comparison therefore evaluates accuracy, robustness, and explainability, as recommended. These changes have been reflected in the revised version of the manuscript, with corresponding discussions and references to key papers on predictive aspects in signal processing.}
+
+\textcolor{blue}{ We believe these changes address the reviewer's concerns and improve the overall quality and reproducibility of our paper.} 
+
+\subsection*{Referee 2}
+
+\textbf{Comment:}  
+I suggest acceptance of the paper.
+
+
+\textcolor{blue}{ \textbf{Response:} 
+We thank the reviewer for the positive feedback and are grateful for the recommendation to accept the paper.
+}
+
+
+%\bibliographystyle{apalike}
+
+%\bibliography{referencias}
+
+\end{document} 
